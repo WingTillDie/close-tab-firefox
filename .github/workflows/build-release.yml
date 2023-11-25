@@ -12,12 +12,16 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      fetch-depth: 0  # Fetch all history
 
     - name: Install zip
       run: sudo apt-get install -y zip
 
     - name: Zip the files
       run: zip -jr CloseTabButton.xpi src/
+
+    - name: Fetch tags
+      run: git fetch --tags
 
     - name: Get Git tag
       id: git_tag
