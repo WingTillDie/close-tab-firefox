@@ -16,7 +16,7 @@ jobs:
     - name: Install zip
       run: sudo apt-get install -y zip
 
-    - name: Zip the files
+    - name: Create xpi by zip the files
       run: zip -jr CloseTabButton.xpi src/
 
     - name: Create Release
