@@ -12,7 +12,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      fetch-depth: 0  # Fetch all history
 
     - name: Install zip
       run: sudo apt-get install -y zip
