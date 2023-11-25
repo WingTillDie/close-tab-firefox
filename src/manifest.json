@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Close Tab Button",
+  "version": "1.0",
+  "description": "Adds a button to close the current tab.",
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Close Tab",
+    "default_popup": "popup.html"
+  }
+}
+
