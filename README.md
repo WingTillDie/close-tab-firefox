@@ -5,12 +5,13 @@
 The Close Tab Button is a simple Firefox add-on that adds a button to toolbar that closes current tab
 
 ## Installation
-
 1. Download the latest release from the [Releases](https://github.com/WingTillDie/close-tab-firefox/releases) page.
 2. Open Firefox and navigate to `about:debugging`.
 3. Click on "This Firefox" in the left sidebar.
 4. Click "Load Temporary Add-on..."
 5. Select the downloaded XPI file.
+
+Or install from [FireFox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/close-tab-button-touch/)
 
 ## Usage
 
@@ -19,8 +20,8 @@ Once the add-on is installed, you will see a "Close Tab" button in your toolbar.
 ## Screenshots
 ![Screenshot](img/screenshot.png)
 This screenshot shows following 2 addons:
-* Close Tab Button (This add-on)
-* https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton
+* [Close Tab Button](https://github.com/WingTillDie/close-tab-firefox) (This add-on)
+* [Undo Close Tab](https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton)
 
 ## Example use case
 Makes Firefox touch-friendly by adding close tab button to toolbar.  
