@@ -16,8 +16,14 @@ The Close Tab Button is a simple Firefox add-on that adds a button to toolbar th
 
 Once the add-on is installed, you will see a "Close Tab" button in your toolbar. Clicking this button will close the current tab.
 
-## Build
+## Screenshots
+![Screenshot](img/screenshot.png)
+
+## Development
+Create the xpi file from source code:  
+```bash
 zip -jr CloseTabButton.xpi src/
+```
 
 ## License
 
