@@ -19,12 +19,16 @@ jobs:
     - name: Zip the files
       run: zip -jr CloseTabButton.xpi src/
 
+    - name: Get Git tag
+      id: git_tag
+      run: echo "::set-output name=TAG_NAME::$(git describe --tags --abbrev=0)"
+
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       with:
-        tag_name: v${{ github.run_number }}
-        release_name: Release ${{ github.run_number }}
+        tag_name: ${{ steps.git_tag.outputs.TAG_NAME }}
+        release_name: Release ${{ steps.git_tag.outputs.TAG_NAME }}
         body: |
           Changes in this release:
           - Describe your changes here
