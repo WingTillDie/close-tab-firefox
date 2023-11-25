@@ -28,6 +28,8 @@ jobs:
         body: |
           Changes in this release:
           - Describe your changes here
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
     - name: Upload Release Asset
       id: upload-release-asset
