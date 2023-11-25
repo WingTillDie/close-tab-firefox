@@ -1,9 +1,9 @@
 name: Build and Release
 
 on:
-  push:
-    branches:
-      - release  # Dedicated branch for release
+  release:
+    types:
+      - created
 
 jobs:
   build:
@@ -16,15 +16,15 @@ jobs:
     - name: Install zip
       run: sudo apt-get install -y zip
 
-    - name: Create xpi by zip the files
+    - name: Create xpi by zipping the files
       run: zip -jr CloseTabButton.xpi src/
 
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
       with:
-        tag_name: ${{ github.ref_name }}
-        release_name: ${{ github.ref_name }}
+        tag_name: ${{ github.event.release.tag_name }}
+        release_name: ${{ github.event.release.tag_name }}
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN_CLASSIC }}
 
@@ -38,4 +38,3 @@ jobs:
         asset_content_type: application/zip
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN_CLASSIC }}
-
