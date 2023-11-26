@@ -37,7 +37,7 @@ Screenshot of showing the add-on in AVNC:
 ## Development
 Create the xpi file from source code:  
 ```bash
-zip -jr CloseTabButton.xpi src/
+zip -jr close_tab_button_touch.xpi src/
 ```
 
 ## License
