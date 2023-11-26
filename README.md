@@ -11,7 +11,7 @@ The Close Tab Button is a simple Firefox add-on that adds a button to toolbar th
 4. Click "Load Temporary Add-on..."
 5. Select the downloaded XPI file.
 
-Or install from [FireFox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/close-tab-button-touch/)
+Or install from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/close-tab-button-touch/)
 
 ## Usage
 
@@ -26,7 +26,7 @@ This screenshot shows following 2 addons:
 ## Example use case
 Makes Firefox touch-friendly by adding close tab button to toolbar.  
 It makes using desktop Firefox on mobile via remote connection easier  
-e.g. Using [MultiVNC](https://f-droid.org/en/packages/com.coboltforge.dontmind.multivnc/) or [AVNC](https://f-droid.org/en/packages/com.gaurav.avnc/) on Android to connect to Windows [TightVNC](https://tightvnc.com) Server to use desktop FireFox
+e.g. Using [MultiVNC](https://f-droid.org/en/packages/com.coboltforge.dontmind.multivnc/) or [AVNC](https://f-droid.org/en/packages/com.gaurav.avnc/) on Android to connect to Windows [TightVNC](https://tightvnc.com) Server to use desktop Firefox
 
 Screenshot of showing the add-on in MultiVNC:
 ![MultiVNC](img/multivnc.png)
